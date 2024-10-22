@@ -5,10 +5,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7056054047:AAEoMDKi8JfTDPjrJO0FxknXqD3SuJdyMc')
+bot = telebot.TeleBot('8108076101:AAFGN4BDAsqWPqcVi_7GsQujUQ47RED7pYU')
 
 # Admin user IDs
-admin_id = ["7236369516"]
+admin_id = ["5052398493"]
 
 # File to store allowed user IDs  
 USER_FILE = "users.txt"
@@ -272,7 +272,7 @@ def show_command_logs(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"🔆 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗕𝗚𝗠𝗜 𝗗𝗗𝗢𝗦 𝗕𝗢𝗧 🔆"
+    response = f"⚡𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗗𝗗𝗢𝗦⚡"
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['broadcast'])
